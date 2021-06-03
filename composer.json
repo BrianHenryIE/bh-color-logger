@@ -1,0 +1,24 @@
+{
+  "name": "brianhenryie/color-logger",
+  "description": "A PSR logger that prints to the console in colour. For tests.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Brian Henry",
+      "email": "BrianHenryIE@gmail.com"
+    }
+  ],
+  "version": "1.0.0",
+  "require": {
+    "psr/log": "^1.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9",
+    "squizlabs/php_codesniffer": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "BrianHenryIE\\ColorLogger\\": "src/"
+    }
+  }
+}

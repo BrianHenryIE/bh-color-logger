@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--suppress XmlUnboundNsPrefix -->
+<ruleset name="strauss">
+    <description>Coding standard ruleset based on the PSR-12 coding standard.</description>
+    <rule ref="PSR12">
+
+    </rule>
+
+    <file>./src</file>
+    <file>./tests</file>
+
+</ruleset>
