@@ -19,6 +19,8 @@ class ColorLoggerTest extends TestCase
 
         $colorLogger->warning('Exceptional occurrences that are not errors.');
 
+        $colorLogger->info('Interesting events.');
+
         $colorLogger->notice('Normal but significant events.');
 
         $colorLogger->error('Runtime errors that do not require immediate action but should typically be logged and monitored.');
