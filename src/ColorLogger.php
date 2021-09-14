@@ -8,10 +8,10 @@
 
 namespace BrianHenryIE\ColorLogger;
 
-use Psr\Log\AbstractLogger;
 use Psr\Log\LogLevel;
+use Psr\Log\Test\TestLogger;
 
-class ColorLogger extends AbstractLogger
+class ColorLogger extends TestLogger
 {
 
     /**
@@ -27,6 +27,8 @@ class ColorLogger extends AbstractLogger
      */
     public function log($level, $message, array $context = array())
     {
+        parent::log($level, $message, $context);
+
         switch ($level) {
             case LogLevel::EMERGENCY:
                 echo "\033[95mEmergency \033[0m  : ";
