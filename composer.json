@@ -8,7 +8,6 @@
       "email": "BrianHenryIE@gmail.com"
     }
   ],
-  "version": "1.0.0",
   "require": {
     "psr/log": "^1.0.0"
   },
