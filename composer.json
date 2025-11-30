@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "psr/log": "^2.0.0",
+    "psr/log": "^3.0.0",
     "fig/log-test": "^1.2"
   },
   "require-dev": {
