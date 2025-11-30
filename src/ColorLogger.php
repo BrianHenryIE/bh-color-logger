@@ -58,7 +58,7 @@ class ColorLogger extends TestLogger
             default:
         }
         echo "{$message}\n";
-        if(function_exists('codecept_debug')) {
+        if (function_exists('codecept_debug')) {
             codecept_debug("{$message}\n");
         }
         ob_flush();
