@@ -10,6 +10,7 @@ namespace BrianHenryIE\ColorLogger;
 
 use Psr\Log\LogLevel;
 use Psr\Log\Test\TestLogger;
+use Stringable;
 
 class ColorLogger extends TestLogger
 {
@@ -25,7 +26,7 @@ class ColorLogger extends TestLogger
      *
      * @throws \Psr\Log\InvalidArgumentException
      */
-    public function log($level, $message, array $context = array())
+    public function log($level, Stringable|string $message, array $context = []): void
     {
         parent::log($level, $message, $context);
 
